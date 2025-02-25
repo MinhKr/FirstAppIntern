@@ -36,40 +36,27 @@ class SignUpActivity : AppCompatActivity() {
         btnCreateAccount = findViewById(R.id.btn_createAccount)
 
         btnCreateAccount.setOnClickListener {
-            validate()
+            validateInputSignUp()
         }
     }
 
-    fun validate() {
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
+    private fun validateInputSignUp() {
         val edtFirstName = edtFirstName.text.toString().trim()
         val edtLastName = edtLastName.text.toString().trim()
         val edtEmail = edtEmail.text.toString().trim()
         val edtPassword = edtPassword.text.toString().trim()
 
         when {
-            edtFirstName.isEmpty() -> Toast.makeText(
-                this,
-                "First name must be not empty",
-                Toast.LENGTH_SHORT
-            ).show()
+            edtFirstName.isEmpty() -> showToast(getString(R.string.check_first_name))
+            edtLastName.isEmpty() -> showToast(getString(R.string.check_last_name))
+            !Patterns.EMAIL_ADDRESS.matcher(edtEmail)
+                .matches() -> showToast(getString(R.string.check_email))
 
-            edtLastName.isEmpty() -> Toast.makeText(
-                this,
-                "Last name must be not empty",
-                Toast.LENGTH_SHORT
-            ).show()
-
-            !Patterns.EMAIL_ADDRESS.matcher(edtEmail).matches() -> Toast.makeText(
-                this,
-                "Email must be valid",
-                Toast.LENGTH_SHORT
-            ).show()
-
-            edtPassword.isEmpty() -> Toast.makeText(
-                this,
-                "Password must be not empty",
-                Toast.LENGTH_SHORT
-            ).show()
+            edtPassword.isEmpty() -> showToast(getString(R.string.check_password))
 
             else -> {
                 val intent = Intent(this, MainActivity::class.java).apply {

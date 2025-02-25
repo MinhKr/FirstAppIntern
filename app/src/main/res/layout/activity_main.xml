@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:src="@drawable/imagelogin" />
+        android:src="@drawable/bg_login" />
 
     <TextView
         style="@style/text_semi_bold_24"
@@ -139,6 +139,5 @@
             android:text="@string/sign_up"
             android:textColor="@color/blue_400" />
     </LinearLayout>
-
 
 </LinearLayout>

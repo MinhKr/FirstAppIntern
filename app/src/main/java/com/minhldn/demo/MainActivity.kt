@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     private lateinit var edtEmail: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         edtEmail = findViewById(R.id.edt_email)
 
         val receivedEmail = intent.getStringExtra("email")
+
         Toast.makeText(this, "$receivedEmail", Toast.LENGTH_SHORT).show()
         edtEmail.setText(receivedEmail)
     }
