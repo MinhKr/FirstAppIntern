@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="34dp"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/bg_signup" />
+
+            <TextView
+                style="@style/text_semi_bold_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="@string/sign_up" />
+
+            <EditText
+                android:id="@+id/edt_first_name"
+                style="@style/edit_text_regular_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/first_name"
+                android:inputType="text"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="18dp" />
+
+            <EditText
+                android:id="@+id/edt_last_name"
+                style="@style/edit_text_regular_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/last_name"
+                android:inputType="text"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="18dp" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                style="@style/edit_text_regular_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/email_id"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="18dp" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                style="@style/edit_text_regular_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="18dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_createAccount"
+                style="@style/base_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="18dp"
+                android:text="@string/create_acc" />
+
+            <TextView
+                style="@style/text_regular_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/already_have_an_account"
+                android:textColor="@color/gray_200" />
+
+            <TextView
+                style="@style/text_semi_bold_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/sign_in"
+                android:textColor="@color/blue_400" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
