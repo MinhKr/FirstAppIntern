@@ -24,7 +24,7 @@
         android:text="@string/login" />
 
     <EditText
-        android:id="@+id/edt_email"
+        android:id="@+id/edtEmail"
         style="@style/edit_text_regular_16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

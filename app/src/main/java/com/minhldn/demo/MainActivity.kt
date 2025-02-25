@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        edtEmail = findViewById(R.id.edt_email)
+        edtEmail = findViewById(R.id.edtEmail)
 
         val receivedEmail = intent.getStringExtra("email")
 

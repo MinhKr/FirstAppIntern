@@ -29,11 +29,11 @@ class SignUpActivity : AppCompatActivity() {
             insets
         }
 
-        edtFirstName = findViewById(R.id.edt_first_name)
-        edtLastName = findViewById(R.id.edt_last_name)
-        edtEmail = findViewById(R.id.edt_email)
-        edtPassword = findViewById(R.id.edt_password)
-        btnCreateAccount = findViewById(R.id.btn_createAccount)
+        edtFirstName = findViewById(R.id.edtFirstName)
+        edtLastName = findViewById(R.id.edtLastName)
+        edtEmail = findViewById(R.id.edtEmail)
+        edtPassword = findViewById(R.id.edtPassword)
+        btnCreateAccount = findViewById(R.id.btnCreateAccount)
 
         btnCreateAccount.setOnClickListener {
             validateInputSignUp()
