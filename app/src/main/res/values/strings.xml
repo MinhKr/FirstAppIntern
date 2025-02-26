@@ -16,4 +16,11 @@
     <string name="check_last_name">Last name must be not empty</string>
     <string name="check_email">Email must be valid</string>
     <string name="check_password">Password must be not empty</string>
+    <string name="the_ocean_moon">The Ocean Moon</string>
+    <string name="non_stop_8_hour_mixes_of_our">Non-stop 8- hour mixes of our</string>
+    <string name="most_popular_sleep_audio">most popular sleep audio</string>
+    <string name="start">Start</string>
+    <string name="sleep_stories">Sleep Stories</string>
+    <string name="soothing_bedtime_stories_to_help_you_fall">Soothing bedtime stories to help you fall</string>
+    <string name="into_a_deep_and_natural_sleep">into a deep and natural sleep</string>
 </resources>

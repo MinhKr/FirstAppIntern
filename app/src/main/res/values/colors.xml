@@ -22,4 +22,6 @@
     <color name="gray_50">#D1D1D1</color>
     <color name="gray_100">#BEC5D2</color>
     <color name="gray_200">#575757</color>
+
+    <color name="indigo_900">#1a237e</color>
 </resources>
