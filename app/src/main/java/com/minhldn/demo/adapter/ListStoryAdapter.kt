@@ -26,8 +26,8 @@ class ListStoryAdapter(private val listStory: List<ListStory>) :
 
     override fun onBindViewHolder(holder: ListStoryViewHolder, position: Int) {
         val currentStory = listStory[position]
-        holder.txtTitleStory.text = currentStory.txtTitleStory
-        holder.txtDescriptionStory.text = currentStory.txtDescriptionStory
+        holder.txtTitleStory.text = currentStory.storyTitle
+        holder.txtDescriptionStory.text = currentStory.storyDescription
         holder.imgImageStory.setImageResource(currentStory.imgItemStory)
     }
 
